@@ -21,6 +21,7 @@ library.add(fas, faWordpressSimple, faDesktop, faShoppingCart, faPuzzlePiece, fa
 function App() {
   return (
     <div className="App">
+  
       <Header />
       <HeroArea />
       <About />
@@ -33,6 +34,7 @@ function App() {
    
       <Contact />
       <Footer />
+
     </div>
   );
 }
