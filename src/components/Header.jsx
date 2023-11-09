@@ -2,7 +2,7 @@
  * Header component.
  */
 
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 
 function Header() {
 
@@ -22,7 +22,7 @@ function Header() {
         }`}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <a className="navbar-brand font-tertiary h3" href="index.html">
-          <img id="logo-header" src="/public/assets/images/logo_white.png" alt="Logo Mrs Capuche" />
+          <img id="logo-header" src="public/assets/images/logo_white.png" alt="Logo Mrs Capuche" />
    
         </a>
         <button
