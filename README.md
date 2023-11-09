@@ -1,12 +1,21 @@
-# React + Vite
+# Mrs Capuche
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet utilise React, Tailwind et NextUi pour un single page statique qui présente mes activitées de dévelopeuse en freelance.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clonez le dépôt sur votre machine locale.
+2. Installez les dépendances en exécutant `npm install`.
+3. Lancez l'application en exécutant `npm run dev`.
+
+## Utilisation
+
+L'application est accessible à l'adresse `http://localhost:3000`. Vous pouvez naviguer sur le site pour voir les différents produits proposés et passer une commande.
+
+## Hébergement
+Project héergé sur Github pages et accessible depuis l'adresse : https://www.mrs-capuche.com/
 
 
-npx tailwindcss -i ./src/App.css -o ./dist/output.css --watch
-npm run dev
+
+
+
