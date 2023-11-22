@@ -10,10 +10,10 @@ Ce projet utilise React, Tailwind et NextUi pour un single page statique qui pr�
 
 ## Utilisation
 
-L'application est accessible à l'adresse `http://localhost:3000`. Vous pouvez naviguer sur le site pour voir les différents produits proposés et passer une commande.
+L'application est accessible à l'adresse `http://localhost:5173`. Vous pouvez naviguer sur le site pour voir les différents produits proposés et passer une commande.
 
 ## Hébergement
-Project héergé sur Github pages et accessible depuis l'adresse : https://www.mrs-capuche.com/
+Project hébergé sur Github pages et accessible depuis l'adresse : https://www.mrs-capuche.com/
 
 
 
