@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build; rm -rf docs ; cp -af dist docs",
+    "build": "vite build; npm run copy-assets; rm -rf docs ; cp -af dist docs",
+    "copy-assets": "cp -rv public/assets/ dist/assets/",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
