@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 function ExperienceCard({ date, title, company, icon }) {
     return (
       <div className="col-lg-3 col-md-4 text-center">
-        <img src={`public/assets/icon/${icon}.jpeg`} alt="icon" />
+        <img src={`/public/assets/icon/${icon}.jpeg`} alt="icon" />
         <p className="mb-0">{date}</p>
         <h4>{title}</h4>
         <h6 className="text-light">{company}</h6>
