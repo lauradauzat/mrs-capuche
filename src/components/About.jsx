@@ -9,7 +9,7 @@ function About() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-2 mx-auto ">
-                <img className="profile-img" src="/public/assets/images/mrs-capuche-profil.jpg" alt="" />
+                <img className="profile-img" src="/assets/images/mrs-capuche-profil.jpg" alt="" />
               </div>
               <div className="col-lg-6 mx-auto text-center">
                 
