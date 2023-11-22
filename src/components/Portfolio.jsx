@@ -6,12 +6,12 @@ function PortfolioCard({ title, img, description, link, technology }) {
 
   return (
     <Card className="col-lg-6 col-sm-12 mb-1 mb-lg-0" style={  {
-      backgroundImage: `/mrs-capuche/assets/images/${img}.jpg`,
+      backgroundImage: `/assets/images/${img}.jpg`,
      } } 
     >
 
       <a href={link} target='blank'>
-      <img src={`/mrs-capuche/assets/images/${img}.jpg`} alt="" />
+      <img src={`/assets/images/${img}.jpg`} alt="" />
         <div className="card-footer bg-white">
           <h4 className="card-title">{title}</h4>
           <p className="card-description">{description}</p>
