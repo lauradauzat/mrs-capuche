@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
  */
 function ExperienceCard({ date, title, company, icon }) {
     return (
-      <div className="col-lg-3 col-md-4 text-center">
+      <div className="col-lg-3 col-md-4 text-center xp-card">
         <img src={`/assets/icon/${icon}.jpeg`} alt="icon" />
         <p className="mb-0">{date}</p>
         <h4>{title}</h4>
@@ -25,7 +25,7 @@ ExperienceCard.propTypes = {
   
   function Experience() {
     return (
-      <section className="section">
+      <section className="section experience">
         <div className="container">
           <div className="row justify-content-around">
             <div className="col-lg-12 text-center">

@@ -191,9 +191,17 @@ body {
   height: 100px;
 }
 
-.fixed-top {
+.header {
   position: sticky;
+  top: 0;
+  z-index: 999;
 }
+
+
+/* .fixed-top {
+  position: sticky;
+} */
+
 
 /* .bg-primary {
   background-color: #413857!important;
@@ -350,7 +358,7 @@ h2, .h2 {
 
 
 .education {
-  background-image: url("src/assets/backgrounds/education-bg.png");
+  background-image: url("/assets/backgrounds/education-bg.png");
   background-position-y: -200px;
 
 }
@@ -393,7 +401,7 @@ h2, .h2 {
 
 .hero-area {
   background-color: #9086ab;
-  background-image: url(/src/assets/images/Devices-amico.png);
+  background-image: url(/assets/images/Devices-amico.png);
   background-position: center;
   height: 300px;
   background-size: unset;
@@ -404,9 +412,78 @@ h2, .h2 {
 }
 
 .profile-img {
-    width: 258px;
-    border-radius: 50%;
+  object-fit: cover;
+  width: 224px;
+  border-radius: 50%;
+  height: 224px;
+  object-position: top;
 }
+
+.service-container .card {
+      /* height: 330px; */
+      width: 280px;
+      background-color: #ffffff;
+}
+@media (max-width: 1333px){
+  .service-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .service-container .card {
+    height: unset;
+    width: unset;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  
+}
+
+
+@media (min-width: 1333px) {
+        /* card carrousel */
+
+        .up .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+        }  
+        .service-container {
+          top: 60px;
+          left: calc(50% - 300px);
+          display: flex;
+          justify-content: center;
+    
+        }
+    
+        .service-container  .card {
+          display: flex;
+          border-radius: 10px;
+          box-shadow: -1rem 0 3rem #000;
+        /*   margin-left: -50px; */
+          transition: 0.4s ease-out;
+          position: relative;
+          left: 0px;
+        }
+    
+        .service-container .card:not(:first-child) {
+            margin-left: -50px;
+        }
+    
+        .service-container .card:hover {
+          transform: translateY(-20px);
+          transition: 0.4s ease-out;
+        }
+    
+        .service-container .card:hover ~ .card {
+          position: relative;
+          left: 50px;
+          transition: 0.4s ease-out;
+        }
+  }
 
 @media (min-width: 992px){
   .navbar-expand-lg .navbar-collapse {
@@ -416,51 +493,14 @@ h2, .h2 {
     margin-right: 20px;
   }
 
-      /* card carrousel */
 
-    .up .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-    }  
-    .service-container {
-      top: 60px;
-      left: calc(50% - 300px);
-      display: flex;
-      justify-content: center;
+}
 
-    }
-
-    .service-container  .card {
-      display: flex;
-      height: 330px;
-      width: 280px;
-      background-color: #f7f7f7;
-      border-radius: 10px;
-      box-shadow: -1rem 0 3rem #000;
-    /*   margin-left: -50px; */
-      transition: 0.4s ease-out;
-      position: relative;
-      left: 0px;
-    }
-
-    .service-container .card:not(:first-child) {
-        margin-left: -50px;
-    }
-
-    .service-container .card:hover {
-      transform: translateY(-20px);
-      transition: 0.4s ease-out;
-    }
-
-    .service-container .card:hover ~ .card {
-      position: relative;
-      left: 50px;
-      transition: 0.4s ease-out;
-    }
-
-
+@media (max-width: 535px) {
+  h2.section-title {
+      font-size: 2em;
+      width: -webkit-fill-available;
+  }
 }
 
 .paragraph-lg {
@@ -468,17 +508,38 @@ h2, .h2 {
 }
 
 
+/*css for shrink header*/
 
-/*header shrinking*/
-
-header.navigation.fixed-top.header.small {
-  height: 80px;
+.shrink {
+  padding: 0.5rem 0.4rem;
 }
 
-header.navigation.fixed-top.header.small .navbar {
-  height: 60px;
+.shrink img {
+  transform: scale(0.7);
+  transform-origin: top left;
+}
+.shrink a {
+  height: 70px;
 }
 
-header.navigation.fixed-top.header.small .navbar #logo-header {
-  height: 60px;
+.navbar-brand .font-tertiary .h3 {
+  transition:height 1s ease-in-out;
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+  color: rgb(255 184 99);
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.xp-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardPortfolio {
+  margin-bottom: 20px;
 }

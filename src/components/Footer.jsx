@@ -8,8 +8,11 @@ function Footer() {
           <div className="col-lg-12 text-center">
             <p>&copy; {new Date().getFullYear()} Laura Dauzat. All Rights Reserved.</p>
           </div>
+
+          
         </div>
       </div>
+
     </footer>
   );
 }

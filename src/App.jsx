@@ -15,6 +15,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faWordpressSimple } from '@fortawesome/free-brands-svg-icons'
 import { faDesktop, faShoppingCart,faPuzzlePiece, faWrench, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import Hook from './components/Hook';
 
 library.add(fas, faWordpressSimple, faDesktop, faShoppingCart, faPuzzlePiece, faWrench, faGraduationCap)
 
@@ -24,10 +25,11 @@ function App() {
   
       <Header />
       <HeroArea />
-      <About />
+       <Hook />
       <Skills />
       <Services />
       <Portfolio />
+      <About />
       <Experience />
       <Education />
    
